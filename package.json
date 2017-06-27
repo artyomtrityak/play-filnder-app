@@ -17,7 +17,7 @@
     "url": "https://github.com/artyomtrityak/play-filnder-app/issues"
   },
   "homepage": "https://github.com/artyomtrityak/play-filnder-app#readme",
-  "devDependencies": {
+  "dependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.0",
