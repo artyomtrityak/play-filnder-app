@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
-import { BrowserRouter, Link } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import configureStore from './configure-store';
 import '../scss/index.scss';
 
+import Header from './components/header';
+import CommandPanel from './components/command-panel';
+import EventsFeed from './components/events-feed';
+import Map from './components/map';
 
 const store = configureStore();
 class App extends Component {
@@ -12,7 +16,14 @@ class App extends Component {
     return (
       <Provider store={store}>
         <div>
-          <Link to="/dashboard">Dashboard</Link>
+          <Header />
+          <div className="container-fluid">
+            <div className="row">
+              <CommandPanel />
+              <Map />
+              <EventsFeed />
+            </div>
+          </div>
         </div>
       </Provider>
     );

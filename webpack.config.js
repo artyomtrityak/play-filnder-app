@@ -16,7 +16,7 @@ if (isProduction) {
       },
       minimize: true,
       sourceMap: false,
-      warnings: false
+      warnings: false,
       //mangle: false
     })
   );
@@ -80,7 +80,7 @@ const webpackConfig = {
     ]
   },
 
-  //Build result
+  // Build result
   output: {
     path: path.join(__dirname, "/build/"),
     filename: "bundle.js",
@@ -91,8 +91,8 @@ const webpackConfig = {
 
   devServer: {
     port: 8090
-    //Uncomment to allow CORS
-    //headers: { "Access-Control-Allow-Origin": "*" }
+    // Uncomment to allow CORS
+    // headers: { "Access-Control-Allow-Origin": "*" }
   },
 
   plugins: plugins,
@@ -102,7 +102,7 @@ const webpackConfig = {
     extensions: [".js", ".scss"]
   },
   devtool: isProduction ? false : "eval-cheap-module-source-map"
-  //devtool: 'eval'
+  // devtool: 'eval'
 };
 
 module.exports = webpackConfig;
