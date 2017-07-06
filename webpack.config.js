@@ -54,7 +54,7 @@ const webpackConfig = {
         }]
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
+        test: /\.(jpe?g|png|gif)$/i,
         loaders: [
           'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
           {
@@ -73,9 +73,13 @@ const webpackConfig = {
                 quality: '75-90',
                 speed: 3,
               },
-            }  
+            }
           }
         ]
+      },
+      {
+        test: /\.svg$/i,
+        loader: 'inline-loader'
       }
     ]
   },

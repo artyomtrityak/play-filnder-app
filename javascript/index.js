@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
+
+import 'octicons/build/sprite.octicons.svg';
+
 import configureStore from './configure-store';
 import '../scss/index.scss';
 
@@ -17,7 +20,7 @@ class App extends Component {
       <Provider store={store}>
         <div>
           <Header />
-          <div className="container-fluid">
+          <div className="pf-main-content-container">
             <div className="row">
               <CommandPanel />
               <Map />

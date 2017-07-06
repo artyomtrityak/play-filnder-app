@@ -1,6 +1,10 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import '../node_modules/leaflet/dist/leaflet.css';
 
+[id="inline-sprite.octicons"] {
+  display: none;
+}
+
 @include media-breakpoint-up(md) {
   .pf-command-panel {
     flex-grow: 0;
@@ -18,3 +22,7 @@
   }
 }
 
+.pf-main-content-container {
+  @include make-container();
+  margin-top: 15px;
+}
