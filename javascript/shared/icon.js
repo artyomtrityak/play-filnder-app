@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Icon(props = {}) {
+const Icon = (props) => {
   return (
     <svg style={{ width: 16, height: 16 }}>
       <use xlinkHref={`#${props.iconName}`} />
@@ -10,9 +10,11 @@ export default function Icon(props = {}) {
       </g>
     </svg>
   );
-}
+};
 
 Icon.propTypes = {
   iconName: React.PropTypes.string.isRequired,
   title: React.PropTypes.string.isRequired
 };
+
+export default Icon;

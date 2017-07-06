@@ -13,6 +13,7 @@ module.exports = {
       "max-len": 0,
       "no-console": 0,
       "quotes": 0,
-      "comma-dangle": 0
+      "comma-dangle": 0,
+      "arrow-body-style": 0,
     }
 };
