@@ -15,5 +15,6 @@ module.exports = {
       "quotes": 0,
       "comma-dangle": 0,
       "arrow-body-style": 0,
+      "no-unused-vars": 0
     }
 };
