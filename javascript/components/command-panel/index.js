@@ -26,7 +26,7 @@ class CommandPanel extends Component {
 
   render() {
     return (
-      <div className="col pf-command-panel">
+      <div className="col atl-command-panel">
         <ul className="list-group">
           <li className="list-group-item justify-content-between">
             My Upcoming Plays

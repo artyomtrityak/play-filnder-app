@@ -3,39 +3,20 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 
+// Load svg sprite
 import 'octicons/build/sprite.octicons.svg';
+// Load css
+import '../assets/scss/index.scss';
 
 import configureStore from './configure-store';
-import '../scss/index.scss';
-
-import Header from './components/header';
-import CommandPanel from './components/command-panel';
-import EventsFeed from './components/events-feed';
-import Map from './components/map';
+import App from './containers/application';
 
 const store = configureStore();
-class App extends Component {
-  render() {
-    return (
-      <Provider store={store}>
-        <div>
-          <Header />
-          <div className="pf-main-content-container">
-            <div className="row">
-              <CommandPanel />
-              <Map />
-              <EventsFeed />
-            </div>
-          </div>
-        </div>
-      </Provider>
-    );
-  }
-}
-
 
 render((
   <BrowserRouter>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </BrowserRouter>
 ), document.querySelector('#root'));

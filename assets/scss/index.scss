@@ -1,0 +1,27 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/leaflet/dist/leaflet.css';
+@import './map/index';
+
+[id="inline-sprite.octicons"] {
+  display: none;
+}
+
+
+.atl-command-panel {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 300px;
+}
+
+
+
+.atl-events-feed {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 300px;
+}
+
+.atl-main-content-container {
+  @include make-container();
+  margin-top: 15px;
+}

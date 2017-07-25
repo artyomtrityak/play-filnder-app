@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 class EventsFeed extends Component {
   render() {
     return (
-      <div className="col pf-events-feed hidden-lg-down">
+      <div className="col atl-events-feed hidden-lg-down">
         <div className="list-group">
           <a href="#/" className="list-group-item list-group-item-action flex-column align-items-start active">
             <div className="d-flex w-100 justify-content-between">
